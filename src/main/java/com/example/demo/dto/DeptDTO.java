@@ -4,9 +4,11 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import com.example.demo.common.BaseQuery;
 
 @Data
+@EqualsAndHashCode(callSuper = false)
 public class DeptDTO extends BaseQuery {
     
     private Long deptId;
